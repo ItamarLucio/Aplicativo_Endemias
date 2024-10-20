@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Vigilância Vetorial",
+    "slug": "DenunciaEndemiaApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#093F78"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#093F78"
+      },
+      "package": "com.DenunciaEndemiaApp.myapp",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Vigilância Vetorial to access your photo",
+          "cameraPermission": "Allow Vigilância Vetorial to access your camera"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Vigilância Vetorial to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4994c5fd-2737-4cb0-9bfa-2f9a92fefebd"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/4994c5fd-2737-4cb0-9bfa-2f9a92fefebd"
+    }
+  }
+}
